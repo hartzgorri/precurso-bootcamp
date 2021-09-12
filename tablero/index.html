@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tablero</title>
+</head>
+<body>
+    <script>
+        let casilla;
+        let resultado = "";
+        let n1 = parseInt(prompt("Introduzca un número para delimitar las dimensiones del tablero:"));
+        for(let eje1 = 1; eje1 <= n1; eje1 = eje1 + 1) {
+            for(let eje2 = 1; eje2 <= n1; eje2 = eje2 + 1) {
+            if(eje2 % 2 == 0) {
+                resultado += casilla = "X";
+            }else {
+                resultado += casilla = "O";
+            }
+        }if(eje1 % 2 != 0) {
+            casilla = "X";
+        }else {
+            casilla = "O";
+        }
+        console.log(resultado)
+
+
+        }
+            
+    </script>
+</body>
+</html>
